@@ -4,7 +4,7 @@
   "private": false,
   "description": "A collection of examples on the use of various node plug-ins",
   "main": "index.js",
-  "type": "module",
+  
   "scripts": {
     "oss": "node scripts/oss/index.js"
   },
@@ -14,9 +14,6 @@
   },
   "author": "Bob",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/709137102/node-npm-examples/issues"
-  },
   "homepage": "https://github.com/709137102/node-npm-examples#readme",
   "dependencies": {
     "ali-oss": "^6.17.1"

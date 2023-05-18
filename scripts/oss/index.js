@@ -1,13 +1,13 @@
 
 
-import OSS from 'ali-oss';
+const OSS = require('ali-oss');
+const fs = require('fs');
 
-console.log(process.env)
 const ossClient = new OSS({
-  region: 'oss-cn-*****',
-  accessKeyId: '******',
-  accessKeySecret: '******',
-  bucket: 'ceshi33',
+    region: 'oss-cn-XXX',
+    accessKeyId: 'XXXX',
+    accessKeySecret: 'XXX',
+    bucket: 'XXX',
 });
 
 const putOSS = async (src, dist) => {
@@ -31,4 +31,6 @@ const batchPutFileToOSS = (src, dist) => {
         addFileToOSSSync(_src, _dist)
       }
     })
-};
+}
+
+batchPutFileToOSS('../../static/oss','XXXX')
